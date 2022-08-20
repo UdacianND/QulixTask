@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace QulixTask.Entities
+{
+    public abstract class BaseModel
+    {
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public DateTimeOffset CreatedDate { get; set; } = DateTimeOffset.UtcNow;
+    }
+}
